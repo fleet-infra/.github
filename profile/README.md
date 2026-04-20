@@ -42,12 +42,15 @@ _(Note: Detailed architectures, network routings, and deployment structures are 
 
 ## FAQ
 
-1. Why use a dedicated GitHub Organization for a homelab?
+<details>
+<summary>Why use a dedicated GitHub Organization for a homelab?</summary>
 
 Creating a separate GitHub organization rather than using a personal user account makes network management significantly easier and more secure.
 
 By tying this organization to [Tailscale](https://tailscale.com), the homelab infrastructure gets its own completely isolated [tailnet](https://tailscale.com/docs/concepts/tailnet). This provides:
 
-- Strict Network Isolation: Clearly separates personal devices from infrastructure servers and services.
-- Better Security & ACLs: Dedicated access control lists, authentication keys, and network tags exclusively for the homelab environment.
-- Clean Access Management: GitHub Organization teams and members can be mapped directly to Tailscale access roles.
+- **Strict Network Isolation**: Clearly separates personal devices from infrastructure servers and services.
+- **Better Security & ACLs**: Dedicated access control lists, authentication keys, and network tags exclusively for the homelab environment.
+- **Clean Access Management**: GitHub Organization teams and members can be mapped directly to Tailscale access roles.
+
+</details>
