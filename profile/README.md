@@ -9,7 +9,7 @@ The infrastructure is split into two primary layers: hardware/network provisioni
 ```mermaid
 flowchart LR
   subgraph GitHub["fleet-infra"]
-    RepoTF[/"infrastructure"/]
+    RepoTF[/"infra"/]
     RepoK8s[/"gitops"/]
   end
 
@@ -35,8 +35,8 @@ flowchart LR
 
 The repositories in this organization are structured by their operational scope:
 
-- [`infrastructure`](https://github.com/fleet-infra/infrastructure): Contains Terraform states and modules to provision the underlying infrastructure.
-- [`gitops`](https://github.com/fleet-infra/gitops): The source of truth for the Kubernetes cluster. FluxCD monitors this repository to deploy ingress controllers, base services, and user applications using Kustomize and Helm.
+- [`infra`](https://github.com/fleet-infra/infra): Manages the lifecycle of the base layer. It handles Tailscale ACLs/Auth Keys, Proxmox/VPS resource provisioning, and Cloud DNS records.
+- [`gitops`](https://github.com/fleet-infra/gitops): Acts as the Source of Truth for the Kubernetes cluster state. FluxCD reconciles this repository to manage ingress, secrets, and workloads.
 
 _(Note: Detailed architectures, network routings, and deployment structures are documented within their respective repositories.)_
 
