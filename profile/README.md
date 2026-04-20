@@ -35,14 +35,14 @@ flowchart LR
 
 The repositories in this organization are structured by their operational scope:
 
-- `infrastructure`: Contains Terraform states and modules to provision the underlying infrastructure (VMs, DNS records, Tailscale ACLs).
-- `gitops`: The source of truth for the Kubernetes cluster. FluxCD monitors this repository to deploy ingress controllers, base services, and user applications using Kustomize and Helm.
+- [`infrastructure`](https://github.com/fleet-infra/infrastructure): Contains Terraform states and modules to provision the underlying infrastructure.
+- [`gitops`](https://github.com/fleet-infra/gitops): The source of truth for the Kubernetes cluster. FluxCD monitors this repository to deploy ingress controllers, base services, and user applications using Kustomize and Helm.
 
 _(Note: Detailed architectures, network routings, and deployment structures are documented within their respective repositories.)_
 
 ## FAQ
 
-- Why use a dedicated GitHub Organization for a homelab?
+1. Why use a dedicated GitHub Organization for a homelab?
 
 Creating a separate GitHub organization rather than using a personal user account makes network management significantly easier and more secure.
 
