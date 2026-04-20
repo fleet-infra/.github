@@ -1,6 +1,6 @@
 # Homelab Infrastructure
 
-This org contains all configurations for my homelab as it is provisioning the base infrastructure via [Terraform](https://developer.hashicorp.com/terraform) and deploying workloads via [FluxCD](https://fluxcd.io/).
+This organization contains all configurations for my homelab, provisioning the base infrastructure via [Terraform](https://developer.hashicorp.com/terraform) and deploying workloads via [FluxCD](https://fluxcd.io/).
 
 ## GitOps Architecture
 
